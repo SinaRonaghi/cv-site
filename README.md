@@ -11,7 +11,7 @@ Repository:
 
 - The site is served from the repository root.
 - Jekyll is disabled with `.nojekyll`.
-- A GitHub Actions workflow deploys the site on every push to `main`.
+- A GitHub Actions workflow publishes the site to a `gh-pages` branch on every push to `main`.
 - The homepage includes a `Download CV` button that downloads `cv.pdf` from the site root.
 
 ## Exact steps to publish
@@ -27,9 +27,10 @@ Repository:
 
 3. Open the repository settings on GitHub.
 4. Go to `Pages`.
-5. Set the source to `GitHub Actions` if it is not already selected.
-6. Wait for the workflow run to finish.
-7. Open the published URL shown in the Actions output.
+5. Set the source to `Deploy from a branch`.
+6. Choose branch `gh-pages` and folder `/ (root)`.
+7. Wait for the workflow run to finish.
+8. Open the published URL shown in the Pages settings.
 
 ## Expected free URL
 
