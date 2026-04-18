@@ -1,9 +1,7 @@
 
 # Sina Ronaghi
 
-Milan (IT) / Rotterdam (NL) | (+31) 626122124 | sinavb6@gmail.com
-
-LinkedIn | ResearchGate | GitHub
+Milan (IT) / Rotterdam (NL) | sinavb6@gmail.com
 
 ## Profile Summary
 
