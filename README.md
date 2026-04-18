@@ -78,13 +78,13 @@ Atiyeh Hoshyar LLC [startup], Ahvaz, Iran | Dec 2017 - Aug 2018
 
 Politecnico di Milano, Milan, Italy | Nov 2021 - May 2025
 
-Thesis: Data-driven approaches for anomaly detection in energy metering.
+[Thesis](https://www.politesi.polimi.it/handle/10589/179092): Data-driven approaches for anomaly detection in energy metering.
 
 ### M.Sc. in Electrical Engineering (106/110)
 
 Politecnico di Milano, Milan, Italy | Sep 2019 - Oct 2021
 
-Thesis: Real-time motion capturing using inertial measurement units and applied embedded systems development.
+[Thesis](https://www.politesi.polimi.it/handle/10589/238318): Real-time motion capturing using inertial measurement units and applied embedded systems development.
 
 ### B.Sc. in Electrical Engineering (14.56/20)
 
