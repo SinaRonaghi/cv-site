@@ -1,11 +1,34 @@
 
-# Sina Ronaghi
+# Sina Ronaghi - Professional CV Website
 
-Milan (IT) / Rotterdam (NL) | sinavb6@gmail.com
+A modern, responsive portfolio website showcasing the professional profile of **Sina Ronaghi**, Ph.D. Electrical Engineer specializing in Metrology, Data Science, Embedded Systems, and Signal Processing.
 
-## Profile Summary
+## 📋 About
 
-Ph.D. Electrical Engineer bridging legal metrology (auditing and certification), embedded systems, and data science. Experienced in project and operations management in international R&D consortiums (Erasmus+, HORIZON) and in executing full-lifecycle product development from startup ideation to academic research. Highly skilled in applying machine learning and robust statistical frameworks (JCGM/GUM) to optimize energy and measurement infrastructures.
+This website presents:
+- **Professional Profile** - Overview of experience in R&D, metrology, and project management
+- **Core Competencies** - Technical skills spanning signal processing, engineering tools, and leadership frameworks
+- **Professional Experience** - Career highlights from post-doctoral research to startup leadership
+- **Education** - Academic credentials including Ph.D. from Politecnico di Milano
+- **15+ Years of Expertise** - Leadership experience coordinating EU innovation programs (Erasmus+, HORIZON)
+- **12+ Publications** - Research papers in top-tier journals and international proceedings
+
+## 🔗 Connect & Learn More
+
+- **LinkedIn**: [linkedin.com/in/sina-ronaghi](https://www.linkedin.com/in/sina-ronaghi/)
+- **ResearchGate**: [researchgate.net/profile/Sina-Ronaghi](https://researchgate.net/profile/Sina-Ronaghi/) - View full publication list and research papers
+- **GitHub**: [github.com/SinaRonaghi](https://github.com/SinaRonaghi/)
+- **Email**: sinavb6@gmail.com
+
+## 📄 Download CV
+
+Two CV versions are available for download:
+- **Academic CV** - Detailed research and academic focus
+- **Industrial CV** - Professional experience and industry highlights
+
+## 🎯 Specializations
+
+**Metrology & Signal Processing** • **Data Science & Machine Learning** • **Embedded Systems** • **Project Management** • **Energy Infrastructure Optimization** • **Legal Metrology Compliance** (ISO/IEC 17025, ISO 9001)
 
 ## Core Competencies
 
