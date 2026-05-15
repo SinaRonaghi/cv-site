@@ -38,7 +38,7 @@ A/D circuit design (Altium, LTSpice), embedded systems (ARM Cortex M / Arduino),
 
 ### Software & Data Science
 
-Python (scikit-learn, PyVISA, Pandas), MATLAB, NI LabVIEW / TestStand, C/C++, R, Node.js, SQL / No-SQL, supervised and unsupervised learning, timeseries forecasting, PCA, Monte Carlo simulation.
+Python (scikit-learn, PyVISA, Pandas), MATLAB (SIMULINK), NI LabVIEW / TestStand, C/C++, R, Node.js, SQL / No-SQL, supervised and unsupervised learning, timeseries forecasting, PCA, Monte Carlo simulation.
 
 ### Frameworks & Leadership
 
