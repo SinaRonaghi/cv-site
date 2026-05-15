@@ -11,6 +11,24 @@
   --shadow: 0 20px 45px rgba(53, 89, 123, 0.15);
 }
 
+/* Futuristic Dark Theme */
+html.futuristic {
+  --bg: #0a1428;
+  --bg-soft: #0f1a33;
+  --card: rgba(15, 85, 140, 0.25);
+  --stroke: rgba(0, 200, 255, 0.2);
+  --text: #e0f2ff;
+  --muted: #a0c4e0;
+  --primary: #00d9ff;
+  --primary-2: #0084d9;
+  --accent: #ff006e;
+  --shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+}
+
+html.futuristic body {
+  background: linear-gradient(160deg, #0a1428 0%, #0f2847 45%, #051a33 100%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -120,6 +138,39 @@ h3 {
 .topbar a:hover {
   background: rgba(73, 156, 203, 0.14);
   transform: translateY(-2px);
+}
+
+.theme-toggle {
+  background: linear-gradient(120deg, var(--primary), var(--primary-2));
+  color: white;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1) rotateZ(10deg);
+  box-shadow: 0 8px 20px rgba(15, 143, 166, 0.3);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-icon {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: rotateZ(-20deg) scale(1.15);
 }
 
 .hero {
@@ -422,6 +473,238 @@ ul {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Futuristic Animations */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.3), 0 20px 45px rgba(0, 217, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.6), 0 20px 60px rgba(0, 217, 255, 0.3);
+  }
+}
+
+@keyframes cyber-float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-15px) translateX(8px);
+  }
+  66% {
+    transform: translateY(10px) translateX(-8px);
+  }
+}
+
+@keyframes data-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes circuit-pulse {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes slide-up-fade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Futuristic Theme Enhancements */
+html.futuristic .glass {
+  border-color: rgba(0, 217, 255, 0.3);
+  background: rgba(15, 85, 140, 0.15);
+  box-shadow: inset 0 1px 0 rgba(0, 217, 255, 0.1), 0 20px 60px rgba(0, 217, 255, 0.1);
+}
+
+html.futuristic .glass:hover {
+  border-color: rgba(0, 217, 255, 0.5);
+  box-shadow: inset 0 1px 0 rgba(0, 217, 255, 0.2), 0 20px 60px rgba(0, 217, 255, 0.2), 0 0 20px rgba(0, 217, 255, 0.15);
+}
+
+html.futuristic .stat-card {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+html.futuristic .reveal.in-view {
+  animation: slide-up-fade 0.8s ease-out;
+}
+
+html.futuristic .bg-orb {
+  animation: cyber-float 12s ease-in-out infinite;
+}
+
+html.futuristic .topbar {
+  border-color: rgba(0, 217, 255, 0.15);
+  background: rgba(15, 85, 140, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 217, 255, 0.1);
+}
+
+html.futuristic h1, 
+html.futuristic h2, 
+html.futuristic h3 {
+  color: #00d9ff;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+
+html.futuristic .timeline::before {
+  background: linear-gradient(180deg, #00d9ff, #ff006e);
+  box-shadow: 0 0 10px #00d9ff;
+}
+
+html.futuristic .timeline-item::before {
+  background: #0a1428;
+  border-color: #00d9ff;
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.5), inset 0 0 10px rgba(0, 217, 255, 0.3);
+}
+
+html.futuristic .theme-toggle {
+  background: linear-gradient(120deg, #00d9ff, #0084d9);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
+}
+
+html.futuristic .theme-toggle:hover {
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.8);
+}
+
+html.futuristic .hero-links a {
+  background: linear-gradient(120deg, #00d9ff, #0084d9);
+  color: #0a1428;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+
+html.futuristic .hero-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+html.futuristic .hero-links a:hover::before {
+  left: 100%;
+}
+
+html.futuristic .hero-links a:hover {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.6), inset 0 0 20px rgba(0, 217, 255, 0.1);
+}
+
+html.futuristic .cv-dropdown summary {
+  background: linear-gradient(120deg, #00d9ff, #0084d9);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+}
+
+html.futuristic .cv-dropdown[open] summary,
+html.futuristic .cv-dropdown summary:hover {
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
+}
+
+html.futuristic .cv-dropdown-menu a {
+  color: #00d9ff;
+  transition: all 0.3s ease;
+}
+
+html.futuristic .cv-dropdown-menu a:hover {
+  background: rgba(0, 217, 255, 0.2);
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+}
+
+html.futuristic .topbar a {
+  color: #00d9ff;
+  transition: all 0.3s ease;
+}
+
+html.futuristic .topbar a:hover {
+  background: rgba(0, 217, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.4);
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
+}
+
+html.futuristic .eyebrow {
+  background: rgba(0, 217, 255, 0.1);
+  border-color: rgba(0, 217, 255, 0.4);
+  color: #00d9ff;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+
+html.futuristic .chips span {
+  background: rgba(0, 217, 255, 0.1);
+  border-color: rgba(0, 217, 255, 0.3);
+  color: #00d9ff;
+}
+
+html.futuristic .summary {
+  color: #a0c4e0;
+}
+
+html.futuristic .meta {
+  color: #a0c4e0;
+}
+
+html.futuristic a {
+  color: #00d9ff;
+}
+
+html.futuristic a:hover {
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
+}
+
+html.futuristic ul li {
+  color: #e0f2ff;
+}
+
+html.futuristic .footer {
+  color: #a0c4e0;
+  border-top: 1px solid rgba(0, 217, 255, 0.2);
+  padding-top: 1.25rem;
+}
+
+html.futuristic .brand {
+  color: #00d9ff;
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
 }
 
 @media (max-width: 980px) {
