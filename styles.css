@@ -26,7 +26,7 @@ html.futuristic {
 }
 
 html.futuristic body {
-  background: linear-gradient(160deg, #0a1428 0%, #0f2847 45%, #051a33 100%);
+  background: #0a1428;
 }
 
 * {
@@ -41,7 +41,7 @@ body {
   margin: 0;
   color: var(--text);
   font-family: "Manrope", sans-serif;
-  background: linear-gradient(160deg, var(--bg) 0%, #f3faff 45%, var(--bg-soft) 100%);
+  background: var(--bg);
   line-height: 1.55;
   overflow-x: hidden;
 }
@@ -55,38 +55,16 @@ h3 {
 }
 
 .bg-grid {
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-  background-image: radial-gradient(rgba(83, 122, 156, 0.13) 1px, transparent 1px);
-  background-size: 26px 26px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent 90%);
+  display: none;
 }
 
 .bg-orb {
-  position: fixed;
-  z-index: -2;
-  border-radius: 50%;
-  filter: blur(35px);
-  opacity: 0.55;
-  animation: float 14s ease-in-out infinite;
+  display: none;
 }
 
-.orb-a {
-  width: 360px;
-  height: 360px;
-  top: -110px;
-  left: -90px;
-  background: linear-gradient(50deg, #87dff5, #8ff3be);
-}
-
+.orb-a,
 .orb-b {
-  width: 440px;
-  height: 440px;
-  bottom: -140px;
-  right: -120px;
-  background: linear-gradient(50deg, #ffd8aa, #ffc2b8);
-  animation-delay: 2s;
+  display: none;
 }
 
 .container {
@@ -548,6 +526,11 @@ ul {
 }
 
 /* Futuristic Theme Enhancements */
+html.futuristic .bg-orb,
+html.futuristic .bg-grid {
+  display: none;
+}
+
 html.futuristic .glass {
   border-color: rgba(0, 217, 255, 0.3);
   background: rgba(15, 85, 140, 0.15);
@@ -565,10 +548,6 @@ html.futuristic .stat-card {
 
 html.futuristic .reveal.in-view {
   animation: slide-up-fade 0.8s ease-out;
-}
-
-html.futuristic .bg-orb {
-  animation: cyber-float 12s ease-in-out infinite;
 }
 
 html.futuristic .topbar {
